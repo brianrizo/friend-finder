@@ -38,6 +38,6 @@ require("../app/routing/htmlRoutes")(app);
 // The below code effectively "starts" our server
 // ==============================================================================
 
-app.listen(PORT, function() {
+app.listen(process.env.PORT || 8484, function() {
   console.log("App is listening on PORT: " + PORT);
 });
